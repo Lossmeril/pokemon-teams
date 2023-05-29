@@ -12,8 +12,8 @@ import {
   Image,
   Card,
   CardBody,
-  Center,
   SimpleGrid,
+  Avatar,
 } from "@chakra-ui/react";
 
 const PokemonDisplay = ({ species, img, type1, name, type2 }: any) => {
@@ -65,19 +65,25 @@ const Trainer = (trainer: TrainerType) => {
         direction={{ base: "column", md: "row" }}
         overflow="hidden"
         variant="outline"
+        mb={6}
       >
-        <Image
-          objectFit="cover"
-          w={{ base: "100%", md: "250px" }}
-          h={{ base: "150px", md: "inherit" }}
-          src={"/img/trainers/" + trainer.name + ".jpg"}
-          alt={trainer.name}
-        />
-
-        <CardBody>
-          <Heading as="h2" size="lg">
+        <Stack
+          direction="column"
+          alignItems="center"
+          w="250px"
+          justify="center"
+        >
+          <Avatar
+            size="xl"
+            name={trainer.name}
+            src={"/img/trainers/" + trainer.name + ".jpg"}
+          />
+          <Heading as="h2" size="md">
             {trainer.name}
           </Heading>
+        </Stack>
+
+        <CardBody>
           <Tabs>
             <TabList>
               {trainer.battles.map((battle) => (

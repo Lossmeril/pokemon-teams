@@ -16,7 +16,7 @@ export type TrainerType = {
   battles: Battle[];
 };
 
-const Trainers: [TrainerType] = [
+const Trainers: TrainerType[] = [
   {
     name: "Imrich",
     battles: [
@@ -190,6 +190,104 @@ const Trainers: [TrainerType] = [
             imgNumber: 25,
             type1: "normal",
             type2: "flying",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Jirka Formánek",
+    battles: [
+      {
+        id: "Final",
+        pkmn: [
+          {
+            name: "Víno de Formys",
+            species: "Tsareena",
+            imgNumber: 1024,
+            type1: "grass",
+          },
+          {
+            name: "Dědek AMAVET",
+            species: "Grimsnarl",
+            imgNumber: 1129,
+            type1: "dark",
+            type2: "fairy",
+          },
+          {
+            name: "Školné",
+            species: "Gholdengo",
+            imgNumber: 1296,
+            type1: "steel",
+            type2: "ghost",
+          },
+          {
+            name: "Nové křídlo",
+            species: "Conkeldurr",
+            imgNumber: 703,
+            type1: "fighting",
+          },
+          {
+            name: "IoT kávovar",
+            species: "Rotom Heat Form",
+            imgNumber: 621,
+            type1: "electric",
+            type2: "fire",
+          },
+          {
+            name: "Ředitel",
+            species: "Beheeyem",
+            imgNumber: 791,
+            type1: "psychic",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Pavel Čáp",
+    battles: [
+      {
+        id: "Final",
+        pkmn: [
+          {
+            name: "Unity",
+            species: "Porygon",
+            imgNumber: 191,
+            type1: "normal",
+          },
+          {
+            name: "Covid-19",
+            species: "Galarian Weezing",
+            imgNumber: 157,
+            type1: "poison",
+            type2: "fairy",
+          },
+          {
+            name: "Ozobot",
+            species: "Registeel",
+            imgNumber: 500,
+            type1: "steel",
+          },
+          {
+            name: "Arduino",
+            species: "Klinklang",
+            imgNumber: 786,
+            type1: "steel",
+          },
+          {
+            name: "micro:bit autíčko",
+            species: "Revavroom",
+            imgNumber: 1259,
+            type1: "steel",
+            type2: "poison",
+          },
+          {
+            name: "Chlap",
+            species: "Bombirdier",
+            imgNumber: 1254,
+            type1: "flying",
+            type2: "dark",
           },
         ],
       },
